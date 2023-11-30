@@ -478,7 +478,7 @@ body {
 .porfolio .portfolio-item{
   margin-bottom: 30px;
 }
-.porfolio #portfolio-filters{
+.portfolio #portfolio-filters{
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -486,7 +486,7 @@ body {
   background: white;
   border-radius: 50px;
 }
-.porfolio #portfolio-filters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -495,10 +495,10 @@ body {
   text-transform: uppercase;
   color:rgb(0, 0, 0);
   margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all ease-in-out 0.3s;
 }
-.portfolio #portfolio-fiters li:hover,
-.portfolio #portfolio-fiters li.filter-active {
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
   color: red;
 } 
 .porfolio .portfolio-wrap {
@@ -508,7 +508,7 @@ body {
   z-index: 1;
 }
 .portfolio .portfolio-wrap::before {
-  content: "";
+  content: "#";
   background: rgba(212, 25, 25, 0.733);
   position: absolute;
   left: 0;
@@ -532,11 +532,11 @@ body {
 }
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  font-size: 28px;
+  font-size: 18px;
   text-align: center;
   background: #149ddd;
   transition: 0.3s;
-  width: 50px;
+  width: 50%;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: #272829;
@@ -557,5 +557,93 @@ body {
 }
 .portfolio-wrap .img-fluid {
   width: 500px;
-  height: ;
+  height: auto;
+}
+/* serviços */
+
+
+
+/* Avaliações */
+
+
+
+/* Formulário */
+.contact {
+  padding-bottom: 130px;
+}
+.contact .info{
+  padding: 30px;
+  background: white;
+  width: 100%;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+}
+.contact .info i {
+  font-size: 20px;
+  color: rgb(167, 58, 58);
+  float: left;
+  height: 44px;
+  width: 44px;
+  background: rgb(224, 189, 189);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgb(198, 46, 46);
+}
+.contact .info .email p {
+  padding-top: 5px;
+}
+.contact .info .address:hover i, 
+.contact .info .email:hover i, 
+.contact .info .phone:hover i {
+  background-color: rgb(206, 45, 45);
+  color: white;
+}
+.contact .php-email-form { /*aaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.694);
+  box-shadow: 0 0 24px rgb(0, 0, 0, 0.12);
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form label {
+  padding: 8px;
+}
+.contact .php-email-form input, 
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.contact .php-email-form input {
+  height: 44px;
+}
+.contact .php-email-form textarea {
+  padding: 10px 15px;
+}
+.contact .php-email-form button [type=submit] {
+  background: rgb(210, 54, 54);
+  border-radius: 4px;
+  padding: 10px 24px;
+  color: white;
+  border: 0;
+  transition: 0.4px;
+}
+.contact .php-email-form button [type=submit]:hover {
+  background: rgb(202, 50, 50);
 }
